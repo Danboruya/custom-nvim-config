@@ -1,11 +1,15 @@
 # My Neovim Config
 
+Forked from [ChristianChiarulli/nvim](https://github.com/ChristianChiarulli/nvim)
+
 ## Try out this config
 
 Make sure to remove or move your current `nvim` directory
 
 ```sh
-git clone git@github.com:ChristianChiarulli/nvim.git ~/.config/nvim
+git clone git@github.com:danboruya/custom-nvim-config.git ~/Repository/custom-nvim-config
+cd ~/.config
+ln -s ~/Repository/custom-nvim-config nvim
 ```
 
 Run `nvim` and wait for the plugins to be installed
