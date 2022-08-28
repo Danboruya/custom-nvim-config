@@ -227,6 +227,9 @@ return packer.startup(function(use)
   -- Java
   use "mfussenegger/nvim-jdtls"
 
+  -- Flutter
+  use "akinsho/flutter-tools.nvim"
+
   -- Rust
   use { "christianchiarulli/rust-tools.nvim", branch = "modularize_and_inlay_rewrite" }
   use "Saecki/crates.nvim"
