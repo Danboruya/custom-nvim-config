@@ -76,7 +76,7 @@ return packer.startup(function(use)
   }
   use "RRethy/vim-illuminate"
   use "j-hui/fidget.nvim"
-  use "lvimuser/lsp-inlayhints.nvim"
+  -- use "lvimuser/lsp-inlayhints.nvim"
   -- use "simrat39/inlay-hints.nvim"
   use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
 
@@ -90,8 +90,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-emoji"
   use "hrsh7th/cmp-nvim-lua"
   use "zbirenbaum/copilot-cmp"
-  use { "tzachar/cmp-tabnine", commit = "1a8fd2795e4317fd564da269cc64a2fa17ee854e", 
-run = "./install.sh" }
+  use { "tzachar/cmp-tabnine", commit = "1a8fd2795e4317fd564da269cc64a2fa17ee854e", run = "./install.sh" }
 
   -- Snippet
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -129,7 +128,7 @@ run = "./install.sh" }
   use "ziontee113/color-picker.nvim"
 
   -- Colorschemes
-  use "lunarvim/onedarker.nvim"
+  -- use "lunarvim/onedarker.nvim"
   use "lunarvim/darkplus.nvim"
   -- use "folke/tokyonight.nvim"
   -- use "lunarvim/colorschemes"
@@ -155,7 +154,7 @@ run = "./install.sh" }
   -- use "Pocco81/DAPInstall.nvim"
 
   -- Tabline
-  -- use "akinsho/bufferline.nvim"
+  use { "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" }
   -- use "tiagovla/scope.nvim"
 
   -- Statusline
@@ -198,7 +197,8 @@ run = "./install.sh" }
   }
 
   -- Git
-  use "lewis6991/gitsigns.nvim"
+  -- use "lewis6991/gitsigns.nvim"
+  use { "lewis6991/gitsigns.nvim", branch="main" }
   use "f-person/git-blame.nvim"
   use "ruifm/gitlinker.nvim"
   use "mattn/vim-gist"
