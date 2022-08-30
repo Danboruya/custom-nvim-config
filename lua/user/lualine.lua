@@ -100,7 +100,7 @@ local lanuage_server = {
     end
     if copilot_active then
       -- language_servers = language_servers .. "%#SLCopilot#" .. " " .. icons.git.Octoface .. "%*"
-      language_servers = language_servers .. " " .. icons.git.Octoface .. " "
+      language_servers = language_servers .. " " .. icons.git.Octoface .. "  "
     end
 
     if client_names_str_len == 0 and not copilot_active then

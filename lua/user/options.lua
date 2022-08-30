@@ -46,6 +46,10 @@ local options = {
 -- vim.opt.fillchars.eob = " "
 -- vim.opt.fillchars = vim.opt.fillchars + "vertleft: "
 -- vim.opt.fillchars = vim.opt.fillchars + "vertright: "
+-- local os = require('os')
+-- if os.execute('conda create') == "0" then
+--   vim.g.python3_host_prog = os.getenv('$CONDA_PREFIX') .. "/bin/python"
+-- end
 vim.opt.fillchars = vim.opt.fillchars + 'eob: '
 vim.opt.fillchars:append {
   stl = ' ',
