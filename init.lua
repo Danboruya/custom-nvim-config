@@ -8,7 +8,13 @@ require "user.navic"
 -- require "user.lsp-inlayhints"
 require "user.lsp"
 require "user.telescope"
-require "user.treesitter"
+
+if vim.fn.has "linux" == 1 or vim.fn.has "mac" == 1 then
+  require "user.treesitter"
+else
+  require "user.treesitter-win"
+end
+
 require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
