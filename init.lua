@@ -65,5 +65,5 @@ require "user.surround"
 -- require "user.harpoon"
 require "user.lab"
 require "user.vim-slash"
--- require "user.flutter-tools"
+require "user.flutter-tools"
 

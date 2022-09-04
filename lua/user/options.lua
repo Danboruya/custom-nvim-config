@@ -70,3 +70,7 @@ vim.filetype.add {
     conf = "dosini",
   },
 }
+
+if vim.fn.executable('python') then
+  vim.g.python3_host_prog = vim.fn.exepath('python') end
+

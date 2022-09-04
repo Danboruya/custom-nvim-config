@@ -45,3 +45,5 @@ java-debug/
 vscode-java-test/
 
 Session.vim
+
+*/.DS_Store

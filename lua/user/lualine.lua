@@ -80,15 +80,17 @@ local lanuage_server = {
 
     local formatter = registered["NULL_LS_FORMATTING"]
     local linter = registered["NULL_LS_DIAGNOSTICS"]
+
     if formatter ~= nil then
       vim.list_extend(client_names, formatter)
     end
+
     if linter ~= nil then
       vim.list_extend(client_names, linter)
     end
 
     -- join client names with commas
-    local client_names_str = table.concat(client_names, " ")
+    local client_names_str = table.concat(client_names, ", ")
     client_names_str = "(" .. client_names_str .. ")"
 
     -- check client_names_str if empty

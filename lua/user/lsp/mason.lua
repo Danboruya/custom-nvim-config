@@ -21,7 +21,8 @@ local servers = {
   "tflint",
   "terraformls",
   "tsserver",
-  "pyright",
+  -- "pyright",
+  "pylsp",
   "yamlls",
   "bashls",
   "clangd",
@@ -101,9 +102,14 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
   end
 
-  if server == "pyright" then
-    local pyright_opts = require "user.lsp.settings.pyright"
-    opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  -- if server == "pyright" then
+  --   local pyright_opts = require "user.lsp.settings.pyright"
+  --   opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  -- end
+
+  if server == "pylsp" then
+    local pylsp_opts = require "user.lsp.settings.pylsp"
+    opts = vim.tbl_deep_extend("force", pylsp_opts, opts)
   end
 
   if server == "solc" then
@@ -143,3 +149,4 @@ end
 
 -- TODO: add something to installer later
 -- require("lspconfig").motoko.setup {}
+
