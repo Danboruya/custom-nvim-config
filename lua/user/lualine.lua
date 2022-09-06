@@ -170,6 +170,24 @@ local fileformat = {
   }
 }
 
+-- local status = function ()
+--   local res = ''
+-- 
+--   local lsp_status_ok, lsp_status = pcall(require, "lsp-status")
+--   if not lsp_status_ok then
+--     return res
+--   end
+-- 
+--   if #vim.lsp.buf_get_clients() > 0 then
+--     res = res .. lsp_status.status()
+--   end
+-- 
+--   if vim.g["notify_command_status"] == "running" then
+-- 		res = res .. ' 喇 '
+-- 	end
+--  	return res
+-- end
+
 local spaces = function()
 	return "Spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end

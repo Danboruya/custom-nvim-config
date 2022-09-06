@@ -126,7 +126,8 @@ return packer.startup(function(use)
 
   -- Color
   use "NvChad/nvim-colorizer.lua"
-  use "ziontee113/color-picker.nvim"
+  -- use "ziontee113/color-picker.nvim"
+  use "nvim-colortils/colortils.nvim"
 
   -- Colorschemes
   -- use "lunarvim/onedarker.nvim"
@@ -160,6 +161,7 @@ return packer.startup(function(use)
 
   -- Statusline
   use "christianchiarulli/lualine.nvim"
+  use "nvim-lua/lsp-status.nvim"
 
   -- Startup
   use "goolord/alpha-nvim"
